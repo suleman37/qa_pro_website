@@ -9,8 +9,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground text-background py-16">
-      <div className="container">
+    <footer className="relative overflow-hidden bg-gradient-to-r from-primary/5 via-card to-accent/5 text-foreground border-t border-border">
+      <div className="absolute inset-0 opacity-60 pointer-events-none">
+        <div className="absolute -top-16 left-10 w-64 h-64 rounded-full bg-primary/15 blur-3xl" />
+        <div className="absolute -bottom-20 right-10 w-72 h-72 rounded-full bg-accent/20 blur-3xl" />
+      </div>
+      <div className="container relative z-10 py-16">
         <div className="grid lg:grid-cols-6 gap-12 mb-12">
           {/* Brand column */}
           <div className="lg:col-span-2">
@@ -18,9 +22,9 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl gradient-cta flex items-center justify-center">
                 <Shield className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-display font-bold text-xl text-background">QA Pro</span>
+              <span className="font-display font-bold text-xl text-foreground">QA Pro</span>
             </div>
-            <p className="text-background/60 text-sm leading-relaxed mb-6 max-w-xs">
+            <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-xs">
               Smart Quality Assurance platform for modern teams. Simplify workflows, boost productivity, ship better products.
             </p>
             <div className="flex items-center gap-4">
@@ -28,7 +32,7 @@ const Footer = () => {
                 <a 
                   key={social}
                   href="#"
-                  className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors text-sm font-medium"
+                  className="w-10 h-10 rounded-lg bg-card/80 border border-border/60 flex items-center justify-center hover:border-foreground/50 hover:shadow-card transition-all text-sm font-medium text-foreground"
                 >
                   {social[0]}
                 </a>
@@ -39,13 +43,13 @@ const Footer = () => {
           {/* Links columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="font-display font-semibold mb-4 text-background">{category}</h4>
+              <h4 className="font-display font-semibold mb-4 text-foreground">{category}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link}>
                     <a 
                       href="#" 
-                      className="text-background/60 text-sm hover:text-background transition-colors"
+                      className="text-muted-foreground text-sm hover:text-foreground transition-colors"
                     >
                       {link}
                     </a>
@@ -57,12 +61,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-background/40 text-sm">
+        <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-muted-foreground text-sm">
             © 2024 QA Pro. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <span className="text-background/40 text-sm flex items-center gap-2">
+            <span className="text-muted-foreground text-sm flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
               All systems operational
             </span>

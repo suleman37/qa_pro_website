@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 
 @layer base {
   :root {
@@ -157,6 +157,31 @@
   .glass-card {
     @apply bg-card/80 backdrop-blur-xl border border-border/50;
   }
+}
+
+.pattern-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px),
+    linear-gradient(0deg, hsl(var(--border) / 0.4) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.45;
+  mask-image: radial-gradient(circle at center, black 55%, transparent 80%);
+}
+
+.aurora {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 60% at 15% 20%, hsl(var(--primary) / 0.16), transparent 40%),
+    radial-gradient(50% 50% at 85% 15%, hsl(var(--accent) / 0.14), transparent 45%),
+    radial-gradient(70% 60% at 50% 75%, hsl(var(--primary) / 0.12), transparent 50%);
+  filter: saturate(1.1);
+}
+
+body {
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 @layer utilities {

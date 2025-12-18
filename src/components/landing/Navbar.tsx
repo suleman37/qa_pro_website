@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import ThemeToggle from "./ThemeToggle";
 import { Shield, Menu, X } from "lucide-react";
 
 const Navbar = () => {
@@ -17,9 +18,13 @@ const Navbar = () => {
   const navLinks = ["Features", "Pricing", "About", "Resources"];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? "bg-background/80 backdrop-blur-xl shadow-soft" : "bg-transparent"
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-background/85 backdrop-blur-2xl shadow-soft border-b border-border/70"
+          : "bg-background/40 backdrop-blur-xl"
+      }`}
+    >
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -45,12 +50,7 @@ const Navbar = () => {
 
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button variant="hero" size="sm">
-              Get Started
-            </Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,6 +70,13 @@ const Navbar = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden pb-6 animate-fade-in">
             <div className="flex flex-col gap-4">
+              <div className="flex items-center justify-between rounded-xl bg-card border border-border/60 px-4 py-3">
+                <div>
+                  <p className="text-sm font-semibold">Appearance</p>
+                  <p className="text-xs text-muted-foreground">Light / Dark</p>
+                </div>
+                <ThemeToggle />
+              </div>
               {navLinks.map((link) => (
                 <a 
                   key={link}
@@ -79,14 +86,6 @@ const Navbar = () => {
                   {link}
                 </a>
               ))}
-              <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="justify-start">
-                  Sign In
-                </Button>
-                <Button variant="hero">
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}
