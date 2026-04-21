@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
 import ThemeToggle from "./ThemeToggle";
 import { Shield, Menu, X } from "lucide-react";
@@ -24,10 +23,11 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Home", to: "/" },
+    { label: "About Us", to: "/about" },
     { label: "Industries", to: "/industries" },
-    { label: "About", to: "/about" },
-    { label: "Contact Us", to: "/contact-us" },
     { label: "Consulting", to: "/consulting" },
+    { label: "Get a free demo", to: "/free-demo" },
+    { label: "Contact Us", to: "/contact-us" },
   ];
 
   return (
@@ -49,14 +49,14 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-2">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
                 end={link.to === "/"}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
-                activeClassName="text-foreground"
+                className="rounded-full px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-card/80 hover:text-foreground"
+                activeClassName="bg-card text-foreground shadow-soft"
               >
                 {link.label}
               </NavLink>
@@ -65,9 +65,6 @@ const Navbar = () => {
 
           {/* Desktop CTAs */}
           <div className="hidden md:flex items-center gap-3">
-            <Button asChild variant="hero" size="sm">
-              <Link to="/free-demo">Get a free demo</Link>
-            </Button>
             <ThemeToggle />
           </div>
 
@@ -100,15 +97,12 @@ const Navbar = () => {
                   key={link.to}
                   to={link.to}
                   end={link.to === "/"}
-                  className="text-muted-foreground hover:text-foreground transition-colors font-medium py-2"
-                  activeClassName="text-foreground"
+                  className="rounded-2xl px-4 py-3 font-medium text-muted-foreground transition-colors hover:bg-card hover:text-foreground"
+                  activeClassName="bg-card text-foreground shadow-soft"
                 >
                   {link.label}
                 </NavLink>
               ))}
-              <Button asChild variant="hero" className="mt-2 w-full">
-                <Link to="/free-demo">Get a free demo</Link>
-              </Button>
             </div>
           </div>
         )}
