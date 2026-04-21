@@ -42,7 +42,7 @@ const FeaturesSection = () => {
       </div>
 
       <div className="container relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Key Features</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Everything You Need to{" "}
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div 
               key={feature.title}

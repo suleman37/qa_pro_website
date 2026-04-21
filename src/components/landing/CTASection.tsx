@@ -5,7 +5,7 @@ const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="container relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div>
           <div className="relative rounded-3xl overflow-hidden">
             {/* Background gradient */}
             <div className="absolute inset-0 gradient-cta" />
@@ -14,7 +14,7 @@ const CTASection = () => {
             <div className="absolute top-0 left-0 w-64 h-64 bg-primary-foreground/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
             <div className="absolute bottom-0 right-0 w-80 h-80 bg-accent/20 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
             
-            <div className="relative z-10 px-8 py-16 md:px-16 md:py-20 text-center">
+            <div className="relative z-10 px-8 py-16 md:px-16 md:py-20">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 text-primary-foreground text-sm font-medium mb-6 backdrop-blur-sm">
                 <Sparkles className="w-4 h-4" />
                 Start your free trial today
@@ -24,12 +24,12 @@ const CTASection = () => {
                 Ready to Transform Your QA Process?
               </h2>
               
-              <p className="text-primary-foreground/80 text-lg max-w-2xl mx-auto mb-10">
+              <p className="text-primary-foreground/80 text-lg max-w-2xl mb-10">
                 Join 500+ teams already using QA Pro to ship better products faster. 
                 No credit card required for your 14-day free trial.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <Button 
                   size="xl" 
                   className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 shadow-elevated font-semibold"

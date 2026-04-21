@@ -15,7 +15,7 @@ const SolutionSection = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent" />
       
       <div className="container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div>
             <span className="inline-flex items-center gap-2 text-accent font-semibold text-sm uppercase tracking-wider">

@@ -31,7 +31,7 @@ const HowItWorksSection = () => {
   return (
     <section className="py-24 bg-secondary/30">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">How It Works</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Get Started in{" "}
@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
             {/* Connection line */}
             <div className="hidden lg:block absolute top-16 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20" />

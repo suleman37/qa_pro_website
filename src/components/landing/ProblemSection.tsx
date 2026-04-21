@@ -27,7 +27,7 @@ const ProblemSection = () => {
   return (
     <section className="py-24 bg-secondary/30">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mb-16">
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">The Challenge</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             QA Shouldn't Be This Hard
@@ -37,7 +37,7 @@ const ProblemSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {problems.map((problem, index) => (
             <div 
               key={problem.title}

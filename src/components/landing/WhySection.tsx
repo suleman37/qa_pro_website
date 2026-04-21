@@ -38,7 +38,7 @@ const WhySection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       
       <div className="container relative z-10">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-3xl mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why QA Pro</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
             Built for Teams That{" "}
@@ -49,7 +49,7 @@ const WhySection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {reasons.map((reason, index) => (
             <div 
               key={reason.title}

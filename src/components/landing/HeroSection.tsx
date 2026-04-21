@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container relative z-10 pt-32 pb-20">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl">
           {/* Headline */}
           <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <span className="text-foreground">QA Pro – Smart</span>
@@ -35,12 +35,12 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Simplify your QA workflows with role-based dashboards, real-time insights, and seamless collaboration. Built for teams that value quality.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
             <Button variant="hero" size="xl">
               Get Started Free
               <ArrowRight className="w-5 h-5" />
@@ -54,7 +54,7 @@ const HeroSection = () => {
           {/* Trust indicators */}
           <div className="mt-16 pt-10 border-t border-border/50 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             <p className="text-sm text-muted-foreground mb-6">Trusted by innovative teams at</p>
-            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
+            <div className="flex flex-wrap items-center gap-8 md:gap-12 opacity-60">
               {['TechCorp', 'InnovateLabs', 'DevStudio', 'CloudBase', 'NextGen'].map((company) => (
                 <span key={company} className="font-display font-semibold text-lg text-muted-foreground">
                   {company}
@@ -66,7 +66,7 @@ const HeroSection = () => {
 
         {/* Dashboard Preview */}
         <div className="mt-20 relative animate-slide-up" style={{ animationDelay: '0.4s' }}>
-          <div className="glass-card rounded-2xl shadow-elevated p-4 md:p-6 max-w-5xl mx-auto border border-border/60 bg-card/85">
+          <div className="glass-card rounded-2xl shadow-elevated p-4 md:p-6 border border-border/60 bg-card/85">
             <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-border/60">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-2xl bg-primary/15 flex items-center justify-center shadow-soft border border-border/70">
@@ -149,7 +149,7 @@ const HeroSection = () => {
                             item.tone === "primary"
                               ? "bg-primary/10 text-primary"
                               : item.tone === "accent"
-                                ? "bg-accent/10 text-accent-foreground"
+                                ? "bg-accent/10 text-accent"
                                 : "bg-background/70 text-muted-foreground"
                           }`}
                         >
