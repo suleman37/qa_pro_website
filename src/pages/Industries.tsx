@@ -4,8 +4,8 @@ const Industries = () => {
   return (
     <ContentPageLayout
       eyebrow="Industries"
-      title="QA workflows built for the teams that cannot afford release risk."
-      description="QA Pro adapts to regulated, high-scale, and fast-moving product teams with clear visibility, role-based reviews, and release confidence across every sprint."
+      title="A brief look at the industries where QA Pro fits best."
+      description="This page should quickly show which industries benefit most from structured QA workflows, release visibility, and role-based coordination."
       highlights={[
         "SaaS teams that need faster regression coverage without adding process overhead.",
         "Fintech and banking products that require traceable quality checks and release approvals.",
@@ -17,17 +17,17 @@ const Industries = () => {
         { value: "24/7", label: "Release visibility", detail: "Centralized reporting keeps delivery, QA, and leadership aligned." },
         { value: "1", label: "Shared system", detail: "Planning, execution, and sign-off live in one consistent workflow." },
       ]}
-      pillarsEyebrow="Industry Fit"
-      pillarsTitle="What changes from one industry to another is the risk model, not the need for clarity."
-      pillarsDescription="Each team gets the same disciplined QA operating model, but the workflows, visibility, and review steps are tuned to domain-specific pressure."
+      pillarsEyebrow="Industry Brief"
+      pillarsTitle="Where QA Pro works best and what each team needs."
+      pillarsDescription="The content should keep the explanation short while still showing how QA Pro adapts to different delivery environments."
       pillars={[
         { title: "SaaS teams", description: "Move quickly with lean release cycles, recurring regressions, and cross-functional ownership." },
         { title: "Fintech products", description: "Support audit trails, approval checkpoints, and better defect prioritization around customer trust." },
         { title: "Healthcare systems", description: "Handle evidence, repeatability, and compliance-sensitive release workflows with more control." },
         { title: "Enterprise delivery", description: "Coordinate multiple squads, environments, and reporting lines without fragmented status updates." },
       ]}
-      processEyebrow="How It Works"
-      processTitle="A practical rollout for industry-specific QA operations."
+      processEyebrow="Page Flow"
+      processTitle="How to explain industry fit in a simple way."
       processSteps={[
         { title: "Map the delivery model", description: "Define release cadence, environments, team roles, and risk checkpoints for the business domain." },
         { title: "Standardize execution", description: "Create one repeatable process for planning, tracking, evidence, and defect follow-up." },

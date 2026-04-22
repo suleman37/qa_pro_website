@@ -4,8 +4,8 @@ const Consulting = () => {
   return (
     <ContentPageLayout
       eyebrow="Consulting"
-      title="Consulting support for QA strategy, workflows, and execution discipline."
-      description="QA Pro consulting helps teams tighten test operations, reduce release friction, and implement a quality process that scales with delivery speed."
+      title="A brief consulting page for QA strategy, workflow, and process support."
+      description="This page should clearly explain how consulting helps teams improve QA operations, team coordination, and release discipline."
       highlights={[
         "Audit existing QA processes, handoffs, and release readiness checkpoints.",
         "Design role-based workflows for testers, developers, product managers, and leadership.",
@@ -17,17 +17,17 @@ const Consulting = () => {
         { value: "1", label: "Operating model", detail: "Create a QA structure your teams can repeat across releases." },
         { value: "0", label: "Unnecessary overhead", detail: "The goal is practical execution, not adding ceremony that slows teams down." },
       ]}
-      pillarsEyebrow="Consulting Focus"
-      pillarsTitle="Consulting is aimed at execution quality, not theoretical process decks."
-      pillarsDescription="The work stays close to your actual delivery cycle so teams can improve planning, triage, ownership, and release confidence in a usable way."
+      pillarsEyebrow="Consulting Brief"
+      pillarsTitle="What the consulting service helps teams improve."
+      pillarsDescription="The explanation should stay short, practical, and focused on real workflow problems instead of heavy process language."
       pillars={[
         { title: "Workflow audit", description: "Review how QA work moves today, where handoffs break, and where release risk becomes unclear." },
         { title: "Role design", description: "Clarify responsibilities between QA, engineering, product, and stakeholders." },
         { title: "Reporting model", description: "Define simple, repeatable reporting that helps decisions instead of creating noise." },
         { title: "Rollout guidance", description: "Turn the target process into a change plan teams can actually adopt." },
       ]}
-      processEyebrow="Engagement Model"
-      processTitle="A consulting structure designed for practical implementation."
+      processEyebrow="Working Steps"
+      processTitle="How the consulting process should be explained simply."
       processSteps={[
         { title: "Assess the current state", description: "Understand your existing QA cycle, release habits, and operational gaps." },
         { title: "Design the target workflow", description: "Create the future-state process with roles, checkpoints, and communication rules." },

@@ -4,34 +4,34 @@ const ContactUs = () => {
   return (
     <ContentPageLayout
       eyebrow="Contact Us"
-      title="Start a conversation about your QA process and release goals."
-      description="Whether you want a walkthrough, pricing discussion, or implementation guidance, this page gives your team a clear path to connect and move forward."
+      title="Use the contact form to tell us about your team and QA needs."
+      description="This page should make it easy for visitors to fill out a simple form, share their requirements, and get a clear response."
       highlights={[
-        "Discuss your current QA bottlenecks, tooling, and reporting requirements.",
-        "Review team size, workflows, and the rollout approach that fits your organization.",
-        "See how QA Pro can support release planning, execution tracking, and stakeholder visibility.",
-        "Move from evaluation to a clear next step without disrupting your existing workflow.",
+        "A simple contact form for name, email, company, and message.",
+        "A clear space to explain current QA problems or product questions.",
+        "An easy way to request a demo, consultation, or pricing discussion.",
+        "A short path from inquiry to the right next step.",
       ]}
       metrics={[
-        { value: "30m", label: "Discovery call", detail: "Enough time to understand your workflow, blockers, and delivery goals." },
-        { value: "3", label: "Common outcomes", detail: "Demo request, consulting fit, or rollout discussion based on your needs." },
-        { value: "1", label: "Clear next step", detail: "Every conversation should end with a defined direction, not vague follow-up." },
+        { value: "1", label: "Contact form", detail: "One clear form should capture the main user details and requirement." },
+        { value: "3", label: "Typical goals", detail: "Demo request, support question, or implementation discussion." },
+        { value: "24h", label: "Fast follow-up", detail: "The page should set the expectation of a timely response." },
       ]}
-      pillarsEyebrow="What To Share"
-      pillarsTitle="The better the context, the more useful the conversation."
-      pillarsDescription="You do not need a perfect brief. A few concrete details about your current QA process are enough to make the discussion productive."
+      pillarsEyebrow="Contact Form"
+      pillarsTitle="What the contact page should help users submit."
+      pillarsDescription="The form does not need to be long. It just needs the right fields so users can explain what they need."
       pillars={[
-        { title: "Current workflow", description: "Explain how your team plans testing, tracks execution, and manages release readiness today." },
-        { title: "Key blockers", description: "Share where things slow down, get missed, or create too much manual coordination." },
-        { title: "Team structure", description: "Outline who owns QA work across engineering, product, and testing roles." },
-        { title: "Evaluation goal", description: "Tell us whether you need a demo, consulting support, or a product fit discussion." },
+        { title: "Basic details", description: "Collect name, email, company, and role so the response is contextual." },
+        { title: "Requirement summary", description: "Let users explain their challenge, workflow, or reason for reaching out." },
+        { title: "Request type", description: "Allow them to mention whether they want a demo, support, or consulting." },
+        { title: "Next action", description: "Guide the submission toward a clear follow-up instead of a dead-end form." },
       ]}
-      processEyebrow="Conversation Flow"
-      processTitle="What usually happens after you reach out."
+      processEyebrow="Form Flow"
+      processTitle="What happens after the user submits the contact form."
       processSteps={[
-        { title: "Context review", description: "We start by understanding the release model, tooling, and the QA pain points you want to solve." },
-        { title: "Fit discussion", description: "We identify whether the right next step is a product demo, workflow consultation, or implementation conversation." },
-        { title: "Action plan", description: "You leave with a clear next move instead of a generic follow-up thread." },
+        { title: "Submit the form", description: "The user shares their contact details and a short message about their need." },
+        { title: "Review the request", description: "The team checks whether the right follow-up is a demo, support reply, or consultation." },
+        { title: "Respond with next steps", description: "The user receives a clear reply with the most relevant next action." },
       ]}
       faqEyebrow="FAQs"
       faqTitle="What teams usually ask before contacting us."
@@ -40,8 +40,8 @@ const ContactUs = () => {
         { question: "Can I ask about both demo and consulting?", answer: "Yes. The discussion can cover product fit and process support in the same call." },
         { question: "Is this only for sales conversations?", answer: "No. The goal is to understand fit and recommend the right path based on your situation." },
       ]}
-      ctaTitle="Start with the problem your team needs to solve."
-      ctaDescription="If you want to reduce QA friction, improve release confidence, or evaluate the platform, this is the right place to begin."
+      ctaTitle="Keep the contact page simple, clear, and action-focused."
+      ctaDescription="The main goal of this page is to help users send the right details through a short and useful form."
     />
   );
 };

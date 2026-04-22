@@ -4,34 +4,34 @@ const FreeDemo = () => {
   return (
     <ContentPageLayout
       eyebrow="Get a Free Demo"
-      title="See how QA Pro manages planning, execution, and release visibility in one place."
-      description="This page gives prospects a dedicated route from the navbar to explore the product and request a walkthrough tailored to their QA process."
+      title="A simple demo page with clear onboarding steps for new teams."
+      description="This page should help visitors request a walkthrough and understand the onboarding path from first demo to team setup."
       highlights={[
-        "A focused product walkthrough based on your current release and testing workflow.",
-        "Examples of dashboards, role-based access, and execution tracking relevant to your team.",
-        "A clear view of how the platform improves status visibility and QA coordination.",
-        "A low-friction next step for internal evaluation, stakeholder review, and adoption.",
+        "A quick way to book a free product walkthrough.",
+        "A clear explanation of what users will see in the demo.",
+        "A simple onboarding journey after the first conversation.",
+        "A low-friction path from interest to setup.",
       ]}
       metrics={[
-        { value: "1", label: "Focused walkthrough", detail: "The demo stays tied to your QA process instead of showing irrelevant screens." },
-        { value: "3", label: "Key areas covered", detail: "Planning, execution tracking, and release visibility." },
-        { value: "Fast", label: "Evaluation path", detail: "Get a practical view of product fit without unnecessary back and forth." },
+        { value: "1", label: "Free demo", detail: "A focused walkthrough should show the product in a simple and relevant way." },
+        { value: "3", label: "Main onboarding steps", detail: "Demo, setup discussion, and team onboarding." },
+        { value: "Fast", label: "Start process", detail: "Users should understand the next step immediately after booking." },
       ]}
-      pillarsEyebrow="Demo Value"
-      pillarsTitle="The best demo is the one that maps directly to your team's workflow."
-      pillarsDescription="The walkthrough is designed to show how QA Pro fits planning, execution, reporting, and release confidence for the kind of team you run today."
+      pillarsEyebrow="Demo Brief"
+      pillarsTitle="What this page should show before onboarding starts."
+      pillarsDescription="The content should quickly explain the demo purpose, what is included, and how the onboarding flow continues after it."
       pillars={[
-        { title: "Relevant screens", description: "See the parts of the platform that matter to your team instead of a generic product tour." },
-        { title: "Role-based flow", description: "Understand how QA, engineering, and leadership use the platform differently." },
-        { title: "Operational clarity", description: "Review how status, blockers, and release confidence become easier to manage." },
-        { title: "Adoption view", description: "Leave with a better sense of rollout effort and internal stakeholder fit." },
+        { title: "What users see", description: "The page should explain the dashboards, workflows, and visibility shown in the demo." },
+        { title: "Who should join", description: "Visitors should know they can invite QA, product, and engineering stakeholders." },
+        { title: "What happens next", description: "The page should connect the demo to setup and onboarding clearly." },
+        { title: "Why it helps", description: "Users should understand how the walkthrough supports decision-making and adoption." },
       ]}
-      processEyebrow="Demo Flow"
-      processTitle="What the free demo is structured to show."
+      processEyebrow="Onboarding Steps"
+      processTitle="Simple onboarding steps after a user requests the free demo."
       processSteps={[
-        { title: "Understand your setup", description: "Start with your current testing model, tools, and release pain points." },
-        { title: "Walk through the platform", description: "See how QA Pro handles planning, execution visibility, ownership, and reporting." },
-        { title: "Confirm next steps", description: "Decide whether to continue with evaluation, rollout planning, or a deeper discussion." },
+        { title: "Book the demo", description: "The visitor requests a walkthrough and shares basic team details." },
+        { title: "Review the workflow", description: "The team sees how QA Pro fits their testing, reporting, and release process." },
+        { title: "Start onboarding", description: "If the fit is right, the next step moves into setup and onboarding planning." },
       ]}
       faqEyebrow="FAQs"
       faqTitle="Questions teams ask before booking a demo."
@@ -40,8 +40,8 @@ const FreeDemo = () => {
         { question: "Can multiple stakeholders join?", answer: "Yes. Product, engineering, QA, and leadership can all join if that helps evaluation." },
         { question: "What should we prepare?", answer: "A short summary of your current QA process, release cadence, and main blockers is enough." },
       ]}
-      ctaTitle="Book a walkthrough that is relevant to your QA workflow."
-      ctaDescription="If you want to see the platform with your own delivery model in mind, the free demo is the right next step."
+      ctaTitle="Use this page to connect the demo request with onboarding."
+      ctaDescription="The free demo page should not stop at interest. It should clearly guide users into the next onboarding step."
       primaryActionLabel="Contact Us"
       primaryActionTo="/contact-us"
     />
