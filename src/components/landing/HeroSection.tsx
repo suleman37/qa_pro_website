@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Activity, ArrowRight, Play, ShieldCheck } from "lucide-react";
+import portfolioImage from "@/assets/My-Portfolio.webp";
 
 const heroMetrics = [
   { label: "Automation runs", value: "240", detail: "+18% vs last sprint", fill: "82%", tone: "primary" },
@@ -15,7 +16,7 @@ const checklistItems = [
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen gradient-hero overflow-hidden">
+    <section className="relative min-h-[100svh] gradient-hero overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -23,36 +24,48 @@ const HeroSection = () => {
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-primary/3 rounded-full blur-3xl" />
       </div>
 
-      <div className="container relative z-10 pt-32 pb-20">
-        <div className="max-w-4xl">
-          <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.2em] text-primary animate-slide-up" style={{ animationDelay: '0.05s' }}>
-            Header
-          </span>
+      <div className="container relative z-10 flex min-h-[calc(100svh-5rem)] flex-col justify-center pt-32 pb-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,36rem)] lg:gap-16">
+          <div className="order-2 relative mx-auto w-full max-w-lg animate-slide-up lg:order-2 lg:mx-0 lg:max-w-2xl" style={{ animationDelay: '0.1s' }}>
+            <div className="glass-card overflow-hidden rounded-[2rem] border border-border/60 bg-card/80 p-3 shadow-elevated">
+              <img
+                src={portfolioImage}
+                alt="QA Pro portfolio preview"
+                className="h-full w-full rounded-[1.5rem] object-cover"
+              />
+            </div>
+          </div>
 
-          {/* Headline */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mt-6 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            <span className="text-foreground">QA Pro – Smart</span>
-            <br />
-            <span className="text-gradient">Quality Assurance</span>
-            <br />
-            <span className="text-foreground">for Modern Teams</span>
-          </h1>
+          <div className="order-1 max-w-4xl lg:order-1">
+            <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.2em] text-primary animate-slide-up" style={{ animationDelay: '0.05s' }}>
+              Header
+            </span>
 
-          {/* Subheading */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Simplify your QA workflows with role-based dashboards, real-time insights, and seamless collaboration. Built for teams that value quality.
-          </p>
+            {/* Headline */}
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mt-6 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              <span className="text-foreground">QA Pro – Smart</span>
+              <br />
+              <span className="text-gradient">Quality Assurance</span>
+              <br />
+              <span className="text-foreground">for Modern Teams</span>
+            </h1>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
-            <Button variant="hero" size="xl">
-              Get Started Free
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="xl">
-              <Play className="w-5 h-5" />
-              Request Demo
-            </Button>
+            {/* Subheading */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              Simplify your QA workflows with role-based dashboards, real-time insights, and seamless collaboration. Built for teams that value quality.
+            </p>
+
+            {/* CTAs */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 animate-slide-up" style={{ animationDelay: '0.3s' }}>
+              <Button variant="hero" size="xl">
+                Get Started Free
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+              <Button variant="heroOutline" size="xl">
+                <Play className="w-5 h-5" />
+                Request Demo
+              </Button>
+            </div>
           </div>
         </div>
 
