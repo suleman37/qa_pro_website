@@ -33,6 +33,12 @@ const features = [
   }
 ];
 
+const achievements = [
+  { value: "98%", label: "Test Coverage" },
+  { value: "60%", label: "Time Saved" },
+  { value: "240+", label: "Automation Runs" }
+];
+
 const FeaturesSection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
@@ -43,18 +49,29 @@ const FeaturesSection = () => {
 
       <div className="container relative z-10">
         <div className="max-w-3xl mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Key Features</span>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Key Features & Achievements</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Everything You Need to{" "}
-            <span className="text-gradient">Ship Quality</span>
+            Key Features & Achievements
           </h2>
           <p className="text-lg text-muted-foreground">
             Powerful features designed to streamline your QA workflows and boost team productivity.
           </p>
         </div>
 
+        <div className="mb-10 grid gap-4 sm:grid-cols-3">
+          {achievements.map((achievement) => (
+            <div
+              key={achievement.label}
+              className="rounded-2xl border border-border/50 bg-card/80 p-6 shadow-soft"
+            >
+              <p className="text-3xl font-bold text-primary">{achievement.value}</p>
+              <p className="mt-2 text-sm font-medium text-muted-foreground">{achievement.label}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <div 
               key={feature.title}
               className="group relative"

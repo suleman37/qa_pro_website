@@ -1,11 +1,9 @@
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
-import ProblemSection from "@/components/landing/ProblemSection";
-import SolutionSection from "@/components/landing/SolutionSection";
-import RolesSection from "@/components/landing/RolesSection";
+import ClientsSection from "@/components/landing/ClientsSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
-import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import WhySection from "@/components/landing/WhySection";
+import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import Footer from "@/components/landing/Footer";
 
 const Index = () => {
@@ -18,12 +16,10 @@ const Index = () => {
       <Navbar />
       <main className="relative z-10">
         <HeroSection />
-        <ProblemSection />
-        <SolutionSection />
-        <RolesSection />
-        <FeaturesSection />
-        <HowItWorksSection />
+        <ClientsSection />
         <WhySection />
+        <TestimonialsSection />
+        <FeaturesSection />
       </main>
       <Footer />
     </div>

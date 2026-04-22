@@ -25,8 +25,12 @@ const HeroSection = () => {
 
       <div className="container relative z-10 pt-32 pb-20">
         <div className="max-w-4xl">
+          <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.2em] text-primary animate-slide-up" style={{ animationDelay: '0.05s' }}>
+            Header
+          </span>
+
           {/* Headline */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mt-6 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <span className="text-foreground">QA Pro – Smart</span>
             <br />
             <span className="text-gradient">Quality Assurance</span>
@@ -49,18 +53,6 @@ const HeroSection = () => {
               <Play className="w-5 h-5" />
               Request Demo
             </Button>
-          </div>
-
-          {/* Trust indicators */}
-          <div className="mt-16 pt-10 border-t border-border/50 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            <p className="text-sm text-muted-foreground mb-6">Trusted by innovative teams at</p>
-            <div className="flex flex-wrap items-center gap-8 md:gap-12 opacity-60">
-              {['TechCorp', 'InnovateLabs', 'DevStudio', 'CloudBase', 'NextGen'].map((company) => (
-                <span key={company} className="font-display font-semibold text-lg text-muted-foreground">
-                  {company}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
 

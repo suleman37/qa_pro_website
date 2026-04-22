@@ -39,11 +39,8 @@ const WhySection = () => {
       
       <div className="container relative z-10">
         <div className="max-w-3xl mb-16">
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why QA Pro</span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
-            Built for Teams That{" "}
-            <span className="text-gradient">Value Quality</span>
-          </h2>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Why Us</span>
+          <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Why Us</h2>
           <p className="text-lg text-muted-foreground">
             We've obsessed over every detail so you can focus on what matters: shipping great products.
           </p>
