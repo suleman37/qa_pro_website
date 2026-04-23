@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="w-10 h-10 rounded-xl gradient-cta flex items-center justify-center shadow-soft">
               <Shield className="w-5 h-5 text-primary-foreground" />
             </div>
-            <span className="font-display font-bold text-xl">QA Pro</span>
+            <span className="font-display font-bold text-xl">Flowchx</span>
           </Link>
 
           {/* Desktop Navigation */}

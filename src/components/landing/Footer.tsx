@@ -22,10 +22,10 @@ const Footer = () => {
               <div className="w-10 h-10 rounded-xl gradient-cta flex items-center justify-center">
                 <Shield className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="font-display font-bold text-xl text-foreground">QA Pro</span>
+              <span className="font-display font-bold text-xl text-foreground">Flowchx</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-xs">
-              Smart Quality Assurance platform for modern teams. Simplify workflows, boost productivity, ship better products.
+              Digitize quality assurance with live production data, critical control point monitoring, and dashboards built for faster decisions.
             </p>
             <div className="flex items-center gap-4">
               {['Twitter', 'LinkedIn', 'GitHub'].map((social) => (
@@ -63,7 +63,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border/60 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-muted-foreground text-sm">
-            © 2024 QA Pro. All rights reserved.
+            © {new Date().getFullYear()} Flowchx. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <span className="text-muted-foreground text-sm flex items-center gap-2">

@@ -30,7 +30,7 @@ const HeroSection = () => {
             <div className="glass-card overflow-hidden rounded-[2rem] border border-border/60 bg-card/80 p-3 shadow-elevated">
               <img
                 src={portfolioImage}
-                alt="QA Pro portfolio preview"
+                alt="Flowchx portfolio preview"
                 className="h-full w-full rounded-[1.5rem] object-cover"
               />
             </div>
@@ -38,21 +38,21 @@ const HeroSection = () => {
 
           <div className="order-1 max-w-4xl lg:order-1">
             <span className="inline-flex items-center rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.2em] text-primary animate-slide-up" style={{ animationDelay: '0.05s' }}>
-              Header
+              Flowchx
             </span>
 
             {/* Headline */}
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mt-6 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <span className="text-foreground">QA Pro – Smart</span>
+              <span className="text-foreground">Digitize Quality</span>
               <br />
-              <span className="text-gradient">Quality Assurance</span>
+              <span className="text-gradient">Operations with</span>
               <br />
-              <span className="text-foreground">for Modern Teams</span>
+              <span className="text-foreground">Flowchx</span>
             </h1>
 
             {/* Subheading */}
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              Simplify your QA workflows with role-based dashboards, real-time insights, and seamless collaboration. Built for teams that value quality.
+              Flowchx streamlines quality assurance by capturing live data from the production floor, monitoring critical control points, and driving timely corrective actions. Real-time dashboards and analytics help teams make faster, better decisions.
             </p>
 
             {/* CTAs */}

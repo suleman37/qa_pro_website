@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    quote: "QA Pro gave our team one clear workflow. Releases are faster and far less chaotic.",
+    quote: "Flowchx gave our team one clear workflow. Releases are faster and far less chaotic.",
     name: "Areeba Khan",
     role: "QA Lead, TechCorp"
   },
@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">Testimonials</h2>
           <p className="text-lg text-muted-foreground">
-            Real feedback from teams using QA Pro to improve visibility, collaboration, and release confidence.
+            Real feedback from teams using Flowchx to improve visibility, collaboration, and release confidence.
           </p>
         </div>
 
